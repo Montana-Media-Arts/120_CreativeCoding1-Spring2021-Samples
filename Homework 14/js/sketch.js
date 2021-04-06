@@ -22,13 +22,13 @@ var shapeYSpeeds = [];
 var mouseShapeX;
 var mouseShapeY;
 
-var squareObject;
+var rectangleObject;
 
 function setup() {
     createCanvas(500, 600);
    
-    // create an object of the square class
-    squareObject = new Square(100, 100, 75, 120, 23, 100);
+    // create the object
+    rectangleObject = new Rectangle(100,200, 100, 50, 120, 35, 210); 
 
     // get a random speed when the it first starts
     for (var i = 0; i < 50; i++) {
@@ -45,11 +45,11 @@ function setup() {
 function draw() {
     background(120, 45, 78);
     stroke(0);
-    fill(0);
-
-
+    
     // create and display an object
-    squareObject.display();
+    rectangleObject.display();
+
+    fill(0);
 
     // call createBorders function
     createBorders(10);
