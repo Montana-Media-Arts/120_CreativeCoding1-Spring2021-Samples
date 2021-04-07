@@ -67,6 +67,7 @@ function draw() {
         // move the shape
         shapeXs[i] += shapeXSpeeds[i];
         shapeYs[i] += shapeYSpeeds[i];
+        
         // check to see if the shape has gone out of bounds
         if (shapeXs[i] > width) {
             shapeXs[i] = 0;
